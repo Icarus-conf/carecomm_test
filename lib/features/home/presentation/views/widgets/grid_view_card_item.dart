@@ -44,19 +44,35 @@ class GridViewCardItem extends StatelessWidget {
             child: Column(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                CachedNetworkImage(
-                  imageUrl: product.image ?? '',
+                SizedBox(
                   width: 0.2.sw,
                   height: 0.1.sh,
-                  fit: BoxFit.fill,
-                ),
-                Text(
-                  product.title ?? '',
-                  maxLines: 1,
-                  overflow: TextOverflow.ellipsis,
-                  style: CustomTextStyles.textStyle12.copyWith(
-                    fontWeight: FontWeight.w600,
+                  child: CachedNetworkImage(
+                    imageUrl: product.image ?? '',
+                    fit: BoxFit.fill,
                   ),
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      product.title ?? '',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: CustomTextStyles.textStyle12.copyWith(
+                        fontWeight: FontWeight.w600,
+                      ),
+                    ),
+                    Text(
+                      "\$${product.price.toString()}",
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: CustomTextStyles.textStyle12.copyWith(
+                        fontWeight: FontWeight.w600,
+                        color: Colors.grey[400],
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
