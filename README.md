@@ -11,7 +11,7 @@
 1. **Clone the repository:**
 
     ```sh
-    git clone https://github.com/yourusername/carecomm_test.git
+    git clone https://github.com/Icarus-conf/carecomm_test.git
     cd carecomm_test
     ```
 
