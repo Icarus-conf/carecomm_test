@@ -65,9 +65,7 @@ class GridViewCardItem extends StatelessWidget {
         IconButton(
           icon: Icon(
             isFavorite ? Icons.favorite : Icons.favorite_border,
-            color: isFavorite
-                ? Colors.red
-                : Colors.grey, // Change color based on `isFavorite`
+            color: isFavorite ? Colors.red : Colors.grey,
           ),
           onPressed: saveToFavoriteFunc,
         ),

@@ -64,8 +64,12 @@ class FavoritesView extends StatelessWidget {
                             color: Colors.grey[500],
                           ),
                         ),
-                        leading: CachedNetworkImage(
-                          imageUrl: product.image ?? '',
+                        leading: SizedBox(
+                          width: 50.w,
+                          height: 50.h,
+                          child: CachedNetworkImage(
+                            imageUrl: product.image ?? '',
+                          ),
                         ),
                         trailing: IconButton(
                           icon: CircleAvatar(

@@ -1,4 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:carecomm_test/core/util/app_colors.dart';
 import 'package:carecomm_test/core/util/custom_text_styles.dart';
 import 'package:carecomm_test/features/home/data/models/product_model.dart';
 import 'package:flutter/material.dart';
@@ -14,9 +15,11 @@ class ProductDetailsView extends StatelessWidget {
       appBar: AppBar(
         title: Text(
           product.title ?? '',
-          style: CustomTextStyles.textStyle14,
+          style: CustomTextStyles.textStyle14.copyWith(
+            color: Colors.white,
+          ),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: AppColors.primaryColor,
       ),
       body: SingleChildScrollView(
         child: Column(
