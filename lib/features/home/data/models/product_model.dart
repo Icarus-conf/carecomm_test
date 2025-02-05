@@ -1,3 +1,8 @@
+import 'package:hive/hive.dart';
+import 'package:injectable/injectable.dart';
+part 'product_model.g.dart';
+
+
 class ProductsResponseModel {
   List<ProductModel>? properties;
 
@@ -13,23 +18,33 @@ class ProductsResponseModel {
   }
 }
 
+@HiveType(typeId: 0)
+@injectable
 class ProductModel {
+  @HiveField(0)
   num? id;
+  @HiveField(1)
   String? title;
+  @HiveField(2)
   num? price;
+  @HiveField(3)
   String? description;
+  @HiveField(4)
   String? category;
+  @HiveField(5)
   String? image;
-  Rating? rating;
+  @HiveField(6)
 
-  ProductModel(
-      {this.id,
-      this.title,
-      this.price,
-      this.description,
-      this.category,
-      this.image,
-      this.rating});
+
+  ProductModel({
+    required this.id,
+    required this.title,
+    required this.price,
+    required this.description,
+    required this.category,
+    required this.image,
+
+  });
 
   ProductModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
@@ -38,7 +53,7 @@ class ProductModel {
     description = json['description'];
     category = json['category'];
     image = json['image'];
-    rating = json['rating'] != null ? Rating.fromJson(json['rating']) : null;
+ 
   }
 
   Map<String, dynamic> toJson() {
@@ -49,28 +64,7 @@ class ProductModel {
     data['description'] = description;
     data['category'] = category;
     data['image'] = image;
-    if (rating != null) {
-      data['rating'] = rating!.toJson();
-    }
-    return data;
-  }
-}
 
-class Rating {
-  num? rate;
-  num? count;
-
-  Rating({this.rate, this.count});
-
-  Rating.fromJson(Map<String, dynamic> json) {
-    rate = json['rate'];
-    count = json['count'];
-  }
-
-  Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['rate'] = rate;
-    data['count'] = count;
     return data;
   }
 }

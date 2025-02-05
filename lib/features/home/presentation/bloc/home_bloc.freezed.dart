@@ -20,18 +20,24 @@ mixin _$HomeEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function() getProductsListEvent,
+    required TResult Function(ProductModel product) toggleFavoriteEvent,
+    required TResult Function() refreshFavoritesEvent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function()? getProductsListEvent,
+    TResult? Function(ProductModel product)? toggleFavoriteEvent,
+    TResult? Function()? refreshFavoritesEvent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function()? getProductsListEvent,
+    TResult Function(ProductModel product)? toggleFavoriteEvent,
+    TResult Function()? refreshFavoritesEvent,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -39,18 +45,25 @@ mixin _$HomeEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(GetProductsListEvent value) getProductsListEvent,
+    required TResult Function(ToggleFavoriteEvent value) toggleFavoriteEvent,
+    required TResult Function(RefreshFavoritesEvent value)
+        refreshFavoritesEvent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult? Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult? Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -119,6 +132,8 @@ class _$StartedImpl implements _Started {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function() getProductsListEvent,
+    required TResult Function(ProductModel product) toggleFavoriteEvent,
+    required TResult Function() refreshFavoritesEvent,
   }) {
     return started();
   }
@@ -128,6 +143,8 @@ class _$StartedImpl implements _Started {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function()? getProductsListEvent,
+    TResult? Function(ProductModel product)? toggleFavoriteEvent,
+    TResult? Function()? refreshFavoritesEvent,
   }) {
     return started?.call();
   }
@@ -137,6 +154,8 @@ class _$StartedImpl implements _Started {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function()? getProductsListEvent,
+    TResult Function(ProductModel product)? toggleFavoriteEvent,
+    TResult Function()? refreshFavoritesEvent,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -150,6 +169,9 @@ class _$StartedImpl implements _Started {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(GetProductsListEvent value) getProductsListEvent,
+    required TResult Function(ToggleFavoriteEvent value) toggleFavoriteEvent,
+    required TResult Function(RefreshFavoritesEvent value)
+        refreshFavoritesEvent,
   }) {
     return started(this);
   }
@@ -159,6 +181,8 @@ class _$StartedImpl implements _Started {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult? Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult? Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
   }) {
     return started?.call(this);
   }
@@ -168,6 +192,8 @@ class _$StartedImpl implements _Started {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
     required TResult orElse(),
   }) {
     if (started != null) {
@@ -225,6 +251,8 @@ class _$GetProductsListEventImpl implements GetProductsListEvent {
   TResult when<TResult extends Object?>({
     required TResult Function() started,
     required TResult Function() getProductsListEvent,
+    required TResult Function(ProductModel product) toggleFavoriteEvent,
+    required TResult Function() refreshFavoritesEvent,
   }) {
     return getProductsListEvent();
   }
@@ -234,6 +262,8 @@ class _$GetProductsListEventImpl implements GetProductsListEvent {
   TResult? whenOrNull<TResult extends Object?>({
     TResult? Function()? started,
     TResult? Function()? getProductsListEvent,
+    TResult? Function(ProductModel product)? toggleFavoriteEvent,
+    TResult? Function()? refreshFavoritesEvent,
   }) {
     return getProductsListEvent?.call();
   }
@@ -243,6 +273,8 @@ class _$GetProductsListEventImpl implements GetProductsListEvent {
   TResult maybeWhen<TResult extends Object?>({
     TResult Function()? started,
     TResult Function()? getProductsListEvent,
+    TResult Function(ProductModel product)? toggleFavoriteEvent,
+    TResult Function()? refreshFavoritesEvent,
     required TResult orElse(),
   }) {
     if (getProductsListEvent != null) {
@@ -256,6 +288,9 @@ class _$GetProductsListEventImpl implements GetProductsListEvent {
   TResult map<TResult extends Object?>({
     required TResult Function(_Started value) started,
     required TResult Function(GetProductsListEvent value) getProductsListEvent,
+    required TResult Function(ToggleFavoriteEvent value) toggleFavoriteEvent,
+    required TResult Function(RefreshFavoritesEvent value)
+        refreshFavoritesEvent,
   }) {
     return getProductsListEvent(this);
   }
@@ -265,6 +300,8 @@ class _$GetProductsListEventImpl implements GetProductsListEvent {
   TResult? mapOrNull<TResult extends Object?>({
     TResult? Function(_Started value)? started,
     TResult? Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult? Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult? Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
   }) {
     return getProductsListEvent?.call(this);
   }
@@ -274,6 +311,8 @@ class _$GetProductsListEventImpl implements GetProductsListEvent {
   TResult maybeMap<TResult extends Object?>({
     TResult Function(_Started value)? started,
     TResult Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
     required TResult orElse(),
   }) {
     if (getProductsListEvent != null) {
@@ -288,11 +327,287 @@ abstract class GetProductsListEvent implements HomeEvent {
 }
 
 /// @nodoc
+abstract class _$$ToggleFavoriteEventImplCopyWith<$Res> {
+  factory _$$ToggleFavoriteEventImplCopyWith(_$ToggleFavoriteEventImpl value,
+          $Res Function(_$ToggleFavoriteEventImpl) then) =
+      __$$ToggleFavoriteEventImplCopyWithImpl<$Res>;
+  @useResult
+  $Res call({ProductModel product});
+}
+
+/// @nodoc
+class __$$ToggleFavoriteEventImplCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$ToggleFavoriteEventImpl>
+    implements _$$ToggleFavoriteEventImplCopyWith<$Res> {
+  __$$ToggleFavoriteEventImplCopyWithImpl(_$ToggleFavoriteEventImpl _value,
+      $Res Function(_$ToggleFavoriteEventImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? product = null,
+  }) {
+    return _then(_$ToggleFavoriteEventImpl(
+      null == product
+          ? _value.product
+          : product // ignore: cast_nullable_to_non_nullable
+              as ProductModel,
+    ));
+  }
+}
+
+/// @nodoc
+
+class _$ToggleFavoriteEventImpl implements ToggleFavoriteEvent {
+  const _$ToggleFavoriteEventImpl(this.product);
+
+  @override
+  final ProductModel product;
+
+  @override
+  String toString() {
+    return 'HomeEvent.toggleFavoriteEvent(product: $product)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$ToggleFavoriteEventImpl &&
+            (identical(other.product, product) || other.product == product));
+  }
+
+  @override
+  int get hashCode => Object.hash(runtimeType, product);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$ToggleFavoriteEventImplCopyWith<_$ToggleFavoriteEventImpl> get copyWith =>
+      __$$ToggleFavoriteEventImplCopyWithImpl<_$ToggleFavoriteEventImpl>(
+          this, _$identity);
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() getProductsListEvent,
+    required TResult Function(ProductModel product) toggleFavoriteEvent,
+    required TResult Function() refreshFavoritesEvent,
+  }) {
+    return toggleFavoriteEvent(product);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function()? getProductsListEvent,
+    TResult? Function(ProductModel product)? toggleFavoriteEvent,
+    TResult? Function()? refreshFavoritesEvent,
+  }) {
+    return toggleFavoriteEvent?.call(product);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? getProductsListEvent,
+    TResult Function(ProductModel product)? toggleFavoriteEvent,
+    TResult Function()? refreshFavoritesEvent,
+    required TResult orElse(),
+  }) {
+    if (toggleFavoriteEvent != null) {
+      return toggleFavoriteEvent(product);
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(GetProductsListEvent value) getProductsListEvent,
+    required TResult Function(ToggleFavoriteEvent value) toggleFavoriteEvent,
+    required TResult Function(RefreshFavoritesEvent value)
+        refreshFavoritesEvent,
+  }) {
+    return toggleFavoriteEvent(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult? Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult? Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
+  }) {
+    return toggleFavoriteEvent?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
+    required TResult orElse(),
+  }) {
+    if (toggleFavoriteEvent != null) {
+      return toggleFavoriteEvent(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class ToggleFavoriteEvent implements HomeEvent {
+  const factory ToggleFavoriteEvent(final ProductModel product) =
+      _$ToggleFavoriteEventImpl;
+
+  ProductModel get product;
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$ToggleFavoriteEventImplCopyWith<_$ToggleFavoriteEventImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$RefreshFavoritesEventImplCopyWith<$Res> {
+  factory _$$RefreshFavoritesEventImplCopyWith(
+          _$RefreshFavoritesEventImpl value,
+          $Res Function(_$RefreshFavoritesEventImpl) then) =
+      __$$RefreshFavoritesEventImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$RefreshFavoritesEventImplCopyWithImpl<$Res>
+    extends _$HomeEventCopyWithImpl<$Res, _$RefreshFavoritesEventImpl>
+    implements _$$RefreshFavoritesEventImplCopyWith<$Res> {
+  __$$RefreshFavoritesEventImplCopyWithImpl(_$RefreshFavoritesEventImpl _value,
+      $Res Function(_$RefreshFavoritesEventImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of HomeEvent
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+
+class _$RefreshFavoritesEventImpl implements RefreshFavoritesEvent {
+  const _$RefreshFavoritesEventImpl();
+
+  @override
+  String toString() {
+    return 'HomeEvent.refreshFavoritesEvent()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$RefreshFavoritesEventImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() started,
+    required TResult Function() getProductsListEvent,
+    required TResult Function(ProductModel product) toggleFavoriteEvent,
+    required TResult Function() refreshFavoritesEvent,
+  }) {
+    return refreshFavoritesEvent();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? started,
+    TResult? Function()? getProductsListEvent,
+    TResult? Function(ProductModel product)? toggleFavoriteEvent,
+    TResult? Function()? refreshFavoritesEvent,
+  }) {
+    return refreshFavoritesEvent?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? started,
+    TResult Function()? getProductsListEvent,
+    TResult Function(ProductModel product)? toggleFavoriteEvent,
+    TResult Function()? refreshFavoritesEvent,
+    required TResult orElse(),
+  }) {
+    if (refreshFavoritesEvent != null) {
+      return refreshFavoritesEvent();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Started value) started,
+    required TResult Function(GetProductsListEvent value) getProductsListEvent,
+    required TResult Function(ToggleFavoriteEvent value) toggleFavoriteEvent,
+    required TResult Function(RefreshFavoritesEvent value)
+        refreshFavoritesEvent,
+  }) {
+    return refreshFavoritesEvent(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Started value)? started,
+    TResult? Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult? Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult? Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
+  }) {
+    return refreshFavoritesEvent?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Started value)? started,
+    TResult Function(GetProductsListEvent value)? getProductsListEvent,
+    TResult Function(ToggleFavoriteEvent value)? toggleFavoriteEvent,
+    TResult Function(RefreshFavoritesEvent value)? refreshFavoritesEvent,
+    required TResult orElse(),
+  }) {
+    if (refreshFavoritesEvent != null) {
+      return refreshFavoritesEvent(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class RefreshFavoritesEvent implements HomeEvent {
+  const factory RefreshFavoritesEvent() = _$RefreshFavoritesEventImpl;
+}
+
+/// @nodoc
 mixin _$HomeState {
   RequestStatus get getProductsListState => throw _privateConstructorUsedError;
   Failures? get getProductsListFailures => throw _privateConstructorUsedError;
   ProductsResponseModel? get productsResponseModel =>
       throw _privateConstructorUsedError;
+  List<ProductModel> get favorites => throw _privateConstructorUsedError;
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -309,7 +624,8 @@ abstract class $HomeStateCopyWith<$Res> {
   $Res call(
       {RequestStatus getProductsListState,
       Failures? getProductsListFailures,
-      ProductsResponseModel? productsResponseModel});
+      ProductsResponseModel? productsResponseModel,
+      List<ProductModel> favorites});
 }
 
 /// @nodoc
@@ -330,6 +646,7 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
     Object? getProductsListState = null,
     Object? getProductsListFailures = freezed,
     Object? productsResponseModel = freezed,
+    Object? favorites = null,
   }) {
     return _then(_value.copyWith(
       getProductsListState: null == getProductsListState
@@ -344,6 +661,10 @@ class _$HomeStateCopyWithImpl<$Res, $Val extends HomeState>
           ? _value.productsResponseModel
           : productsResponseModel // ignore: cast_nullable_to_non_nullable
               as ProductsResponseModel?,
+      favorites: null == favorites
+          ? _value.favorites
+          : favorites // ignore: cast_nullable_to_non_nullable
+              as List<ProductModel>,
     ) as $Val);
   }
 }
@@ -359,7 +680,8 @@ abstract class _$$HomeStateImplCopyWith<$Res>
   $Res call(
       {RequestStatus getProductsListState,
       Failures? getProductsListFailures,
-      ProductsResponseModel? productsResponseModel});
+      ProductsResponseModel? productsResponseModel,
+      List<ProductModel> favorites});
 }
 
 /// @nodoc
@@ -378,6 +700,7 @@ class __$$HomeStateImplCopyWithImpl<$Res>
     Object? getProductsListState = null,
     Object? getProductsListFailures = freezed,
     Object? productsResponseModel = freezed,
+    Object? favorites = null,
   }) {
     return _then(_$HomeStateImpl(
       getProductsListState: null == getProductsListState
@@ -392,6 +715,10 @@ class __$$HomeStateImplCopyWithImpl<$Res>
           ? _value.productsResponseModel
           : productsResponseModel // ignore: cast_nullable_to_non_nullable
               as ProductsResponseModel?,
+      favorites: null == favorites
+          ? _value._favorites
+          : favorites // ignore: cast_nullable_to_non_nullable
+              as List<ProductModel>,
     ));
   }
 }
@@ -402,7 +729,9 @@ class _$HomeStateImpl implements _HomeState {
   const _$HomeStateImpl(
       {this.getProductsListState = RequestStatus.init,
       this.getProductsListFailures,
-      this.productsResponseModel});
+      this.productsResponseModel,
+      final List<ProductModel> favorites = const []})
+      : _favorites = favorites;
 
   @override
   @JsonKey()
@@ -411,10 +740,18 @@ class _$HomeStateImpl implements _HomeState {
   final Failures? getProductsListFailures;
   @override
   final ProductsResponseModel? productsResponseModel;
+  final List<ProductModel> _favorites;
+  @override
+  @JsonKey()
+  List<ProductModel> get favorites {
+    if (_favorites is EqualUnmodifiableListView) return _favorites;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_favorites);
+  }
 
   @override
   String toString() {
-    return 'HomeState(getProductsListState: $getProductsListState, getProductsListFailures: $getProductsListFailures, productsResponseModel: $productsResponseModel)';
+    return 'HomeState(getProductsListState: $getProductsListState, getProductsListFailures: $getProductsListFailures, productsResponseModel: $productsResponseModel, favorites: $favorites)';
   }
 
   @override
@@ -428,12 +765,18 @@ class _$HomeStateImpl implements _HomeState {
                     other.getProductsListFailures, getProductsListFailures) ||
                 other.getProductsListFailures == getProductsListFailures) &&
             (identical(other.productsResponseModel, productsResponseModel) ||
-                other.productsResponseModel == productsResponseModel));
+                other.productsResponseModel == productsResponseModel) &&
+            const DeepCollectionEquality()
+                .equals(other._favorites, _favorites));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType, getProductsListState,
-      getProductsListFailures, productsResponseModel);
+  int get hashCode => Object.hash(
+      runtimeType,
+      getProductsListState,
+      getProductsListFailures,
+      productsResponseModel,
+      const DeepCollectionEquality().hash(_favorites));
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
@@ -448,7 +791,8 @@ abstract class _HomeState implements HomeState {
   const factory _HomeState(
       {final RequestStatus getProductsListState,
       final Failures? getProductsListFailures,
-      final ProductsResponseModel? productsResponseModel}) = _$HomeStateImpl;
+      final ProductsResponseModel? productsResponseModel,
+      final List<ProductModel> favorites}) = _$HomeStateImpl;
 
   @override
   RequestStatus get getProductsListState;
@@ -456,6 +800,8 @@ abstract class _HomeState implements HomeState {
   Failures? get getProductsListFailures;
   @override
   ProductsResponseModel? get productsResponseModel;
+  @override
+  List<ProductModel> get favorites;
 
   /// Create a copy of HomeState
   /// with the given fields replaced by the non-null parameter values.
