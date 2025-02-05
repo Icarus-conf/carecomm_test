@@ -1,16 +1,76 @@
-# carecomm_test
+## Installation
 
-A new Flutter project.
+### Prerequisites
 
-## Getting Started
+- [Flutter](https://flutter.dev/docs/get-started/install)
+- [Dart](https://dart.dev/get-dart)
+- [Android Studio](https://developer.android.com/studio) or [Xcode](https://developer.apple.com/xcode/) for iOS development
 
-This project is a starting point for a Flutter application.
+### Steps
 
-A few resources to get you started if this is your first Flutter project:
+1. **Clone the repository:**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    ```sh
+    git clone https://github.com/yourusername/carecomm_test.git
+    cd carecomm_test
+    ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2. **Install dependencies:**
+
+    ```sh
+    flutter pub get
+    ```
+
+3. **Run the project:**
+
+    ```sh
+    flutter run
+    ```
+
+### Additional Steps for iOS
+
+1. **Navigate to the iOS directory:**
+
+    ```sh
+    cd ios
+    ```
+
+2. **Install CocoaPods dependencies:**
+
+    ```sh
+    pod install
+    ```
+
+3. **Return to the project root directory:**
+
+    ```sh
+    cd ..
+    ```
+
+4. **Run the project:**
+
+    ```sh
+    flutter run
+    ```
+
+### Additional Steps for Android
+
+1. **Ensure Android SDK is installed and configured.**
+
+2. **Run the project:**
+
+    ```sh
+    flutter run
+    ```
+
+### Additional Steps for Web
+
+1. **Ensure you have Chrome or another supported browser installed.**
+
+2. **Run the project:**
+
+    ```sh
+    flutter run -d chrome
+    ```
+
+This will set up your project and get it running on your desired platform.
