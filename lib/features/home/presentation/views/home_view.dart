@@ -23,9 +23,11 @@ class _HomeViewState extends State<HomeView> {
     handleGetProductsEvent();
   }
 
+  /// Triggers the `GetProductsListEvent` to load the product list from the API
   handleGetProductsEvent() {
     var homeBloc = BlocProvider.of<HomeBloc>(context);
 
+    // Only fetch products if they haven't been loaded or the list is empty
     if (homeBloc.state.productsResponseModel == null ||
         homeBloc.state.productsResponseModel!.properties!.isEmpty) {
       homeBloc.add(GetProductsListEvent());
@@ -35,6 +37,8 @@ class _HomeViewState extends State<HomeView> {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
+
+    // Refresh the favorites list every time the widget rebuilds
     BlocProvider.of<HomeBloc>(context).add(RefreshFavoritesEvent());
   }
 
